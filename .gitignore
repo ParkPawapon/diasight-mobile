@@ -1,0 +1,114 @@
+# FVM / Flutter SDK pinning
+.fvm/
+!.fvmrc
+
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# Keep pubspec.lock committed for Flutter applications.
+# Do not ignore generated Dart files globally; decide per PR so generated API changes are reviewable.
+
+# Environment files and secrets
+.env
+.env.*
+*.env
+*.env.*
+assets/env/.env
+assets/env/.env.*
+!assets/env/.env.example
+!.env.example
+
+# Certificates, pins, keys, and private credentials
+*.cer
+*.cert
+*.crt
+*.csr
+*.der
+*.jks
+*.key
+*.keystore
+*.mobileprovision
+*.p8
+*.p12
+*.pem
+*.pfx
+*.provisionprofile
+*.secret
+secrets/
+private/
+credentials/
+
+# Android sensitive/native artifacts
+android/key.properties
+android/keystore.properties
+android/app/key.properties
+android/app/*.jks
+android/app/*.keystore
+android/app/google-services.json
+android/app/src/**/google-services.json
+android/.gradle/
+android/captures/
+android/local.properties
+android/**/local.properties
+
+# iOS sensitive/native artifacts
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/.symlinks/
+ios/Runner/GoogleService-Info.plist
+ios/Runner/*.entitlements.local
+ios/**/*.xcuserstate
+ios/**/*.mode1v3
+ios/**/*.mode2v3
+ios/**/*.moved-aside
+ios/**/*.pbxuser
+ios/**/*.perspectivev3
+ios/**/xcuserdata/
+ios/**/DerivedData/
+
+# Desktop Flutter generated artifacts
+macos/Flutter/ephemeral/
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+
+# Fastlane sensitive/output files
+fastlane/.env
+fastlane/.env.*
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+fastlane/readme.md
+
+# Observability / third-party service secrets
+sentry.properties
+firebase_app_id_file.json
+
+# IDEs and editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
