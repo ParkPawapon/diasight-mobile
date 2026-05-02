@@ -1,0 +1,15 @@
+import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
+
+GoRouter createAppRouter() {
+  return GoRouter(
+    initialLocation: '/',
+    routes: [
+      GoRoute(
+        path: '/',
+        name: 'root',
+        builder: (context, state) => const SizedBox.shrink(),
+      ),
+    ],
+  );
+}

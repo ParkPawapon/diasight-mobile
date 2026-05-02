@@ -1,0 +1,4 @@
+storePassword=change-me
+keyPassword=change-me
+keyAlias=diasight
+storeFile=/absolute/path/to/release.keystore
