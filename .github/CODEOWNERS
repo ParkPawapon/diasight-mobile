@@ -1,0 +1,25 @@
+# Production Enterprise Code Owners
+# ParkPawapon is the only production code owner and bypass approver.
+# Keep this file strict: every path requires ParkPawapon review.
+
+* @ParkPawapon
+
+# Repository governance and automation
+/.github/ @ParkPawapon
+/.github/CODEOWNERS @ParkPawapon
+
+# Production application surfaces
+/app/ @ParkPawapon
+/src/ @ParkPawapon
+/ios/ @ParkPawapon
+/android/ @ParkPawapon
+
+# Dependency and release controls
+/package.json @ParkPawapon
+/package-lock.json @ParkPawapon
+/pnpm-lock.yaml @ParkPawapon
+/yarn.lock @ParkPawapon
+/Gemfile @ParkPawapon
+/Gemfile.lock @ParkPawapon
+/Podfile @ParkPawapon
+/Podfile.lock @ParkPawapon
