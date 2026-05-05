@@ -12,8 +12,12 @@ final class AppMixTokens {
 
   static Map<ColorToken, Color> get colors => {
     AppColorTokens.brand: AppColors.brand,
+    AppColorTokens.brandHover: AppColors.brandHover,
+    AppColorTokens.brandPressed: AppColors.brandPressed,
+    AppColorTokens.brandSoft: AppColors.brandSoft,
     AppColorTokens.brandForeground: AppColors.brandForeground,
     AppColorTokens.accent: AppColors.accent,
+    AppColorTokens.accentSoft: AppColors.accentSoft,
     AppColorTokens.background: AppColors.background,
     AppColorTokens.surface: AppColors.surface,
     AppColorTokens.surfaceMuted: AppColors.surfaceMuted,

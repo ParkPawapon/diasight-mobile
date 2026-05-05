@@ -4,8 +4,12 @@ final class AppColorTokens {
   const AppColorTokens._();
 
   static const brand = ColorToken('color.brand');
+  static const brandHover = ColorToken('color.brand.hover');
+  static const brandPressed = ColorToken('color.brand.pressed');
+  static const brandSoft = ColorToken('color.brand.soft');
   static const brandForeground = ColorToken('color.brand.foreground');
   static const accent = ColorToken('color.accent');
+  static const accentSoft = ColorToken('color.accent.soft');
   static const background = ColorToken('color.background');
   static const surface = ColorToken('color.surface');
   static const surfaceMuted = ColorToken('color.surface.muted');

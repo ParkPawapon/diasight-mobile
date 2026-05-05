@@ -1,4 +1,6 @@
 import 'package:diasight_app/core/theme/tokens/colors/app_colors.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_text_theme.dart';
 import 'package:flutter/material.dart';
 
 final class AppTheme {
@@ -20,6 +22,8 @@ final class AppTheme {
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
+      fontFamily: AppFontFamilies.primary,
+      textTheme: AppTextTheme.material,
       scaffoldBackgroundColor: AppColors.background,
       visualDensity: VisualDensity.adaptivePlatformDensity,
     );
@@ -42,6 +46,11 @@ final class AppTheme {
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
+      fontFamily: AppFontFamilies.primary,
+      textTheme: AppTextTheme.material.apply(
+        bodyColor: AppColors.textPrimaryDark,
+        displayColor: AppColors.textPrimaryDark,
+      ),
       scaffoldBackgroundColor: AppColors.backgroundDark,
       visualDensity: VisualDensity.adaptivePlatformDensity,
     );

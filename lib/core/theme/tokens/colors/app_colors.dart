@@ -1,42 +1,44 @@
+import 'package:diasight_app/core/theme/tokens/colors/app_color_palette.dart';
 import 'package:flutter/material.dart';
-import 'package:tailwind_colors/tailwind_colors.dart';
 
 final class AppColors {
   const AppColors._();
 
-  static final Color brand = TW3Colors.blue.shade600;
-  static final Color brandHover = TW3Colors.blue.shade700;
-  static final Color brandPressed = TW3Colors.blue.shade800;
-  static const Color brandForeground = Colors.white;
+  static const Color brand = AppColorPalette.deepViolet;
+  static const Color brandHover = AppColorPalette.lavender;
+  static const Color brandPressed = AppColorPalette.deepViolet;
+  static const Color brandSoft = AppColorPalette.softLavender;
+  static const Color brandForeground = AppColorPalette.white;
 
-  static final Color accent = TW3Colors.cyan.shade600;
-  static final Color accentDark = TW3Colors.cyan.shade400;
+  static const Color accent = AppColorPalette.coral;
+  static const Color accentSoft = AppColorPalette.salmon;
+  static const Color accentDark = AppColorPalette.salmon;
 
-  static final Color background = TW3Colors.slate.shade50 ?? Colors.white;
-  static final Color surface = TW3Colors.slate.shade50 ?? Colors.white;
-  static final Color surfaceMuted = TW3Colors.slate.shade100;
-  static final Color border = TW3Colors.slate.shade200;
+  static const Color background = AppColorPalette.white;
+  static const Color surface = AppColorPalette.white;
+  static const Color surfaceMuted = AppColorPalette.gray50;
+  static const Color border = AppColorPalette.gray200;
 
-  static final Color textPrimary = TW3Colors.slate.shade900;
-  static final Color textSecondary = TW3Colors.slate.shade700;
-  static final Color textMuted = TW3Colors.slate.shade500;
-  static const Color textInverse = Colors.white;
+  static const Color textPrimary = AppColorPalette.black;
+  static const Color textSecondary = AppColorPalette.gray600;
+  static const Color textMuted = AppColorPalette.gray400;
+  static const Color textInverse = AppColorPalette.white;
 
-  static final Color success = TW3Colors.emerald.shade600;
-  static final Color warning = TW3Colors.amber.shade500;
-  static final Color danger = TW3Colors.rose.shade600;
-  static final Color info = TW3Colors.sky.shade600;
+  static const Color success = Color(0xFF16A34A);
+  static const Color warning = Color(0xFFF59E0B);
+  static const Color danger = AppColorPalette.salmon;
+  static const Color info = AppColorPalette.deepViolet;
 
-  static final Color brandDark = TW3Colors.blue.shade400;
-  static final Color backgroundDark = TW3Colors.slate.shade900;
-  static final Color surfaceDark = TW3Colors.slate.shade900;
-  static final Color surfaceMutedDark = TW3Colors.slate.shade800;
-  static final Color borderDark = TW3Colors.slate.shade700;
-  static final Color textPrimaryDark = TW3Colors.slate.shade50 ?? Colors.white;
-  static final Color textSecondaryDark = TW3Colors.slate.shade300;
-  static final Color textMutedDark = TW3Colors.slate.shade400;
-  static final Color successDark = TW3Colors.emerald.shade400;
-  static final Color warningDark = TW3Colors.amber.shade400;
-  static final Color dangerDark = TW3Colors.rose.shade400;
-  static final Color infoDark = TW3Colors.sky.shade400;
+  static const Color brandDark = AppColorPalette.lavender;
+  static const Color backgroundDark = AppColorPalette.gray900;
+  static const Color surfaceDark = AppColorPalette.gray800;
+  static const Color surfaceMutedDark = Color(0xFF3A3A3A);
+  static const Color borderDark = Color(0xFF4A4A4A);
+  static const Color textPrimaryDark = AppColorPalette.white;
+  static const Color textSecondaryDark = AppColorPalette.gray200;
+  static const Color textMutedDark = AppColorPalette.gray400;
+  static const Color successDark = Color(0xFF4ADE80);
+  static const Color warningDark = Color(0xFFFBBF24);
+  static const Color dangerDark = AppColorPalette.coral;
+  static const Color infoDark = AppColorPalette.softLavender;
 }

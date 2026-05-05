@@ -1,75 +1,64 @@
 import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
 import 'package:diasight_app/core/theme/tokens/typography/app_font_sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:mix/mix.dart';
 
-final class AppTextTokens {
-  const AppTextTokens._();
+final class AppTextTheme {
+  const AppTextTheme._();
 
-  static const heading1 = TextStyleToken('text.heading.1');
-  static const heading2 = TextStyleToken('text.heading.2');
-  static const heading3 = TextStyleToken('text.heading.3');
-  static const heading4 = TextStyleToken('text.heading.4');
-  static const title = TextStyleToken('text.title');
-  static const body1 = TextStyleToken('text.body.1');
-  static const body2 = TextStyleToken('text.body.2');
-  static const description1 = TextStyleToken('text.description.1');
-  static const description2 = TextStyleToken('text.description.2');
-
-  static final Map<TextStyleToken, TextStyle> values = {
-    heading1: const TextStyle(
+  static const TextTheme material = TextTheme(
+    displayLarge: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.heading1,
       fontWeight: FontWeight.w700,
       height: 1.2,
     ),
-    heading2: const TextStyle(
+    displayMedium: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.heading2,
       fontWeight: FontWeight.w700,
       height: 1.2,
     ),
-    heading3: const TextStyle(
+    displaySmall: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.heading3,
       fontWeight: FontWeight.w600,
       height: 1.25,
     ),
-    heading4: const TextStyle(
+    headlineMedium: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.heading4,
       fontWeight: FontWeight.w600,
       height: 1.3,
     ),
-    title: const TextStyle(
+    titleLarge: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.title,
       fontWeight: FontWeight.w600,
       height: 1.3,
     ),
-    body1: const TextStyle(
+    bodyLarge: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.body1,
       fontWeight: FontWeight.w400,
       height: 1.5,
     ),
-    body2: const TextStyle(
+    bodyMedium: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.body2,
       fontWeight: FontWeight.w400,
       height: 1.45,
     ),
-    description1: const TextStyle(
+    bodySmall: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.description1,
       fontWeight: FontWeight.w400,
       height: 1.4,
     ),
-    description2: const TextStyle(
+    labelSmall: TextStyle(
       fontFamily: AppFontFamilies.primary,
       fontSize: AppFontSizes.description2,
       fontWeight: FontWeight.w400,
       height: 1.35,
     ),
-  };
+  );
 }
