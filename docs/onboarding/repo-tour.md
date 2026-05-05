@@ -2,6 +2,8 @@
 
 เอกสารนี้เอาไว้พาเพื่อนใหม่ดู repo แบบเร็วแต่ใช้งานได้จริง อ่านจบควรรู้ว่าไฟล์ไหนอยู่ตรงไหน เวลาได้งานเช่น login, onboarding, dashboard ต้องเริ่มเขียนที่ folder ไหน และเวลาใช้สี/ฟอนต์ต้องใช้ token ตัวไหน
 
+ถ้างานคือทำ UI อย่างเดียวสำหรับ 2 หน้า Onboarding และ Login ให้อ่านคู่มือเฉพาะทางนี้ก่อน: [ui-onboarding-login-guide.md](ui-onboarding-login-guide.md)
+
 ## ภาพรวมสั้นๆ
 
 โปรเจกต์นี้ใช้แนว Feature-First Clean Architecture:
