@@ -51,6 +51,7 @@ flutter:
     - assets/certificates/
     - assets/icons/
     - assets/images/
+    - assets/images/onboardings/onboarding.png
     - assets/lottie/
 
   fonts:
