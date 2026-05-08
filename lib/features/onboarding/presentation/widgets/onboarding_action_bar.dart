@@ -5,10 +5,12 @@ import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart
 
 class AppButton extends StatelessWidget {
   final String text;
+  final VoidCallback onPressed;
 
   const AppButton({
     super.key,
     required this.text,
+    required this.onPressed,
   });
 
   @override
@@ -19,11 +21,11 @@ class AppButton extends StatelessWidget {
         width: double.infinity,
         height: 40,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: onPressed,
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColorPalette.deepViolet,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(52),
+              borderRadius: BorderRadius.circular(8),
             ),
           ),
           child: Text(
