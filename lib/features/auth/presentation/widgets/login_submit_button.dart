@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
 import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
-import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
+import '../../../../core/theme/tokens/typography/app_font_families.dart';
+import '../../../../core/theme/tokens/colors/app_color_palette.dart';
 
-class AppButton extends StatelessWidget {
+class LoginButton extends StatelessWidget {
   final String text;
-  final VoidCallback onPressed;
 
-  const AppButton({
+  const LoginButton({
     super.key,
     required this.text,
-    required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 60),
+
+    return Center(
       child: SizedBox(
         width: double.infinity,
         height: 40,
         child: ElevatedButton(
-          onPressed: onPressed,
+          onPressed: () {},
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColorPalette.deepViolet,
             shape: RoundedRectangleBorder(
@@ -34,7 +32,7 @@ class AppButton extends StatelessWidget {
             style: const TextStyle(
               fontSize: AppFontSizes.base,
               fontFamily: AppFontFamilies.kanit,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w600,
               color: AppColorPalette.white,
             ),
           ),
