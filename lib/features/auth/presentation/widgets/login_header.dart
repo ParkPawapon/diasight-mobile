@@ -1,11 +1,12 @@
+import 'package:diasight_app/core/theme/tokens/colors/app_color_palette.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_sizes.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
 
-class HeaderLogin extends StatelessWidget {
+class LoginHeader extends StatelessWidget {
+  const LoginHeader({required this.text, required this.account, super.key});
+
   final String text;
   final String account;
-  const HeaderLogin({super.key, required this.text, required this.account});
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +22,7 @@ class HeaderLogin extends StatelessWidget {
               fontSize: AppFontSizes.base,
             ),
           ),
-
-          const SizedBox(
-            width: 8,
-          ),
-
+          const SizedBox(width: 8),
           Text(
             account,
             style: const TextStyle(
@@ -38,4 +35,3 @@ class HeaderLogin extends StatelessWidget {
     );
   }
 }
-

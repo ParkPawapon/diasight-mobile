@@ -1,17 +1,19 @@
+import 'package:diasight_app/core/theme/tokens/colors/app_color_palette.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_sizes.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
-import '../../../../core/theme/tokens/typography/app_font_families.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
 
-class LoginWithButton extends StatelessWidget {
-  final String text;
-  final Image icon;
-
-  const LoginWithButton({
-    super.key,
+class LoginOpenIdButton extends StatelessWidget {
+  const LoginOpenIdButton({
     required this.text,
     required this.icon,
+    this.onPressed,
+    super.key,
   });
+
+  final String text;
+  final Widget icon;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -29,28 +31,22 @@ class LoginWithButton extends StatelessWidget {
         ],
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed ?? () {},
         style: ElevatedButton.styleFrom(
           elevation: 0,
           backgroundColor: AppColorPalette.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           side: const BorderSide(
-            color: AppColorPalette.softLavender, // ใส่สีเส้นขอบที่นี่
-            width: 0.5, // ความหนาของเส้น
+            color: AppColorPalette.softLavender,
+            width: 0.5,
           ),
         ),
         child: Center(
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(
-                width: 30,
-                height:30,
-                child: icon,
-              ),
-              const SizedBox(width: 12,),
+              SizedBox(width: 30, height: 30, child: icon),
+              const SizedBox(width: 12),
               Text(
                 text,
                 textAlign: TextAlign.center,
@@ -62,7 +58,7 @@ class LoginWithButton extends StatelessWidget {
                 ),
               ),
             ],
-        ),
+          ),
         ),
       ),
     );

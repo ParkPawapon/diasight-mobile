@@ -1,25 +1,22 @@
+import 'package:diasight_app/core/theme/tokens/colors/app_color_palette.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_sizes.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
-import '../../../../core/theme/tokens/typography/app_font_families.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
 
-class LoginButton extends StatelessWidget {
+class LoginSubmitButton extends StatelessWidget {
+  const LoginSubmitButton({required this.text, this.onPressed, super.key});
+
   final String text;
-
-  const LoginButton({
-    super.key,
-    required this.text,
-  });
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
-
     return Center(
       child: SizedBox(
         width: double.infinity,
         height: 40,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: onPressed ?? () {},
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColorPalette.deepViolet,
             shape: RoundedRectangleBorder(
