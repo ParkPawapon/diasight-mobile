@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
-import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
+import 'package:diasight_app/core/theme/tokens/colors/app_color_palette.dart';
 import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_sizes.dart';
+import 'package:flutter/material.dart';
 
-class AppButton extends StatelessWidget {
-  final String text;
-  final VoidCallback onPressed;
-
-  const AppButton({
-    super.key,
+class OnboardingActionButton extends StatelessWidget {
+  const OnboardingActionButton({
     required this.text,
     required this.onPressed,
+    super.key,
   });
+
+  final String text;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {

@@ -5,11 +5,12 @@ class OnboardingIllustration extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(constraints: const BoxConstraints(
-      maxHeight: 300
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxHeight: 300),
+      child: Image.asset(
+        'assets/images/onboardings/onboarding.png',
+        fit: BoxFit.contain,
       ),
-      child: Image.asset('assets/images/onboardings/onboarding.png', 
-      fit: BoxFit.contain),
     );
   }
 }

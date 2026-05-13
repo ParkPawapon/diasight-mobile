@@ -1,19 +1,17 @@
+import 'package:diasight_app/core/theme/tokens/colors/app_color_palette.dart';
 import 'package:diasight_app/core/theme/tokens/typography/app_font_families.dart';
+import 'package:diasight_app/core/theme/tokens/typography/app_font_sizes.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
-import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
-
 
 class OnboardingSlideCard extends StatelessWidget {
-  final String title;
-  final String description;
-
-  //constructor
   const OnboardingSlideCard({
-    super.key,
     required this.title,
     required this.description,
+    super.key,
   });
+
+  final String title;
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -31,11 +29,7 @@ class OnboardingSlideCard extends StatelessWidget {
               color: AppColorPalette.deepViolet,
             ),
           ),
-
-          const SizedBox(
-            height: 10,
-          ),
-
+          const SizedBox(height: 10),
           Text(
             description,
             textAlign: TextAlign.justify,
