@@ -1,101 +1,33 @@
+import 'package:diasight_app/features/auth/presentation/pages/auth_base.dart';
+import 'package:diasight_app/features/auth/presentation/pages/register_page_first.dart';
+import 'package:diasight_app/features/auth/presentation/widgets/Login/login_form.dart';
 import 'package:flutter/material.dart';
-import '../widgets/login_header.dart';
-import '../widgets/login_form.dart';
-import '../../../../core/theme/tokens/colors/app_color_palette.dart';
-import '../../../../core/theme/tokens/typography/app_font_sizes.dart';
-import '../../../../core/theme/tokens/typography/app_font_families.dart';
+
+
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-
-      // Appbar
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        actions: const [
-          HeaderLogin(
-            text: 'ยังไม่มีบัญชี?',
-            account: 'สมัครสมาชิก',
-          ),
-        ],
-      ),
-
-      body: Stack(
-        children: [
-          Container(
-            color: Colors.deepPurple[900],
-          ),
-
-          Positioned(
-            top: -100,
-            left: -90,
-            child: _buildGlow(
-              280,
-              AppColorPalette.softLavender.withOpacity(0.3),
-            ),
-          ),
-
-          Positioned(
-            top: -70,
-            right: -80,
-            child: _buildGlow(
-              320,
-              AppColorPalette.softLavender.withOpacity(0.3),
-            ),
-          ),
-
-          const Column(
-            children: [
-              SizedBox(height: 220),
-
-              Expanded(
-                child: ModalFormBackground(),
-              ),
-            ],
-          ),
-
-          const SafeArea(
-            child: Center(
-              child: Column(
-                children: [
-                  SizedBox(height: 10),
-
-                  Text(
-                    'Login',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: AppFontFamilies.montserrat,
-                      fontSize: AppFontSizes.heading1,
-                      fontWeight: FontWeight.w800,
-                      color: AppColorPalette.white,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
+    return AuthBased(
+      onBack: () {
+        Navigator.popUntil(context, (route) {
+          return route.isFirst; 
+        });
+      },
+      customForm: LoginForm(),
+      customTitle: 'Login',
+      headerText: 'ยังไม่มีบัญชี?',
+      headerAction: 'สมัครสมาชิก',
+      onPressed: () => 
+      Navigator.push(
+        context, 
+        MaterialPageRoute(builder: (context) => const RegisterPageFirst(),
+        settings: const RouteSettings(name: '/registerone')
+        ),
+        
       ),
     );
   }
-}
-
-Widget _buildGlow(double size, Color color) {
-  return Container(
-    width: size,
-    height: size,
-    decoration: BoxDecoration(
-      shape: BoxShape.circle,
-      gradient: RadialGradient(
-        colors: [
-          color,
-          color.withOpacity(0),
-        ],
-      ),
-    ),
-  );
 }
