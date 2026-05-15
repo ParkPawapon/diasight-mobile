@@ -1,4 +1,4 @@
-import 'package:diasight_app/features/setting/pages/setting_page.dart';
+import 'package:diasight_app/features/dashboard/presentation/pages/mainPage.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/theme/tokens/colors/app_color_palette.dart';
 import '../../../../../core/theme/tokens/typography/app_font_families.dart';
