@@ -1,6 +1,6 @@
+import 'package:diasight_app/features/auth/presentation/pages/login_page.dart';
 import 'package:diasight_app/features/auth/presentation/widgets/Login/login_submit_button.dart';
 import 'package:diasight_app/features/auth/presentation/widgets/Register/page_indicator.dart';
-import 'package:diasight_app/features/dashboard/presentation/pages/mainPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
@@ -197,7 +197,9 @@ class _OtpState extends State<RegisterOtp> {
                     text: 'สมัครสมาชิก',
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const MainPage()),
+                      MaterialPageRoute(builder: (context) => 
+                      const LoginPage(),
+                      ),
                     ),
                   ),
 

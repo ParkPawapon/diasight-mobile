@@ -25,9 +25,6 @@ class _mainState extends State<MainPage> {
           ),
         ),
       ),
-      body: Container(
-        
-      ),
 
       bottomNavigationBar: Container(
         child: BottomBar(),

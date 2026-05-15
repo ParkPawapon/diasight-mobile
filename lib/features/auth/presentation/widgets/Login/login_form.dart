@@ -1,4 +1,4 @@
-import 'package:diasight_app/features/dashboard/presentation/pages/mainPage.dart';
+import 'package:diasight_app/features/setting/pages/setting_page.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/theme/tokens/colors/app_color_palette.dart';
 import '../../../../../core/theme/tokens/typography/app_font_families.dart';
@@ -139,7 +139,9 @@ class LoginForm extends StatelessWidget {
                         onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const MainPage())
+                            builder: (context) => const SettingPage(),
+                            settings: const RouteSettings(name: '/setting')
+                            )
                         )
                       ),
                     ],
