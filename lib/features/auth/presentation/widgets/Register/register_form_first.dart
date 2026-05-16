@@ -97,11 +97,13 @@ class RegisterFormFirst extends StatelessWidget {
 
                             case 2:
                               Navigator.push(context, MaterialPageRoute(builder: (context) => const RegisterPageSecond(),
+                              settings: RouteSettings(name: '/registertwo')
                               ));
                               break;
 
                             case 3:
                               Navigator.push(context, MaterialPageRoute(builder: (context) => const RegisterPageThird(),
+                              settings: RouteSettings(name: '/registerthree')
                               ));
                               break;
                           }

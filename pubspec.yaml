@@ -50,6 +50,7 @@ flutter:
     - assets/env/
     - assets/certificates/
     - assets/icons/
+    - assets/icons/setting_icon/
     - assets/images/
     - assets/images/onboardings/onboarding.png
     - assets/lottie/

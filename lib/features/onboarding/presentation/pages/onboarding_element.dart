@@ -27,7 +27,7 @@ class OnboardingPage extends StatelessWidget {
             
             // ใช้ปุ่มที่คุณสร้างไว้ (ตรวจสอบชื่อคลาสปุ่มให้ตรง เช่น AppButton หรือ LoginButton)
             AppButton(
-              text: 'เข้าสู่ระบบ',
+              text: 'เริ่มต้นใช้งาน',
               onPressed: () {
                 Navigator.push(
                   context,

@@ -139,7 +139,9 @@ class LoginForm extends StatelessWidget {
                         onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const MainPage())
+                            builder: (context) => const SettingPage(),
+                            settings: const RouteSettings(name: '/setting')
+                            )
                         )
                       ),
                     ],

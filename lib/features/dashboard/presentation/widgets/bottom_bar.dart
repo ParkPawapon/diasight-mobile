@@ -17,9 +17,9 @@ class _BottomState extends State<BottomBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[200],
-      bottomNavigationBar: Container(
+    return Container(
+      // backgroundColor: Colors.grey[200],
+      child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 36),
         child: SizedBox(
           height: 80,
