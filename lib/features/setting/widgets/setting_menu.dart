@@ -9,7 +9,6 @@ class Menubox extends StatelessWidget {
   final String icon;
   final String text;
   final VoidCallback? onPressed;
-  final String trailingText;
   const Menubox({
     super.key,
     required this.icon,
